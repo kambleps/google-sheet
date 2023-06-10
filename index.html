@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exel Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="item">
+            <li><a href="#">File</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Insert</a></li>
+            <li><a href="#">Layout</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+
+    <span class="material-icons copy" id="copy-btn">content_copy</span>
+    <span class="material-icons cut" id="cut-btn">content_cut</span>
+    <span class="material-icons paste" id="paste-btn">content_paste</span>
+
+    <select id="font-family">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans-Serif</option>
+        <option value="monospace">Monospace</option>
+        <option value="cursive">Cursive</option>
+        <option value="fantasy">Fantasy</option>
+    </select>
+    <select id="font-size">
+        <option value="14px">14</option>
+        <option value="16px">16</option>
+        <option value="18px">18</option>
+        <option value="20px">20</option>
+        <option value="22px">22</option>
+    </select>
+
+    <span class="material-icons bold" id="bold-btn">format_bold</span>
+    <span class="material-icons italic" id="italic-btn">format_italic</span>
+    <span class="material-icons underline" id="underline-btn">format_underlined</span>
+    <span class="right material-icons alignment" id="right-align">format_align_right</span>
+    <span class="left material-icons alignment" id="left-align">format_align_left</span>
+    <span class="center material-icons alignment" id="center">format_align_center</span>
+    
+    <div class="font-color">
+    <span class="material-icons" >format_color_text</span>
+    <input type="color" id="text-color">
+    </div>
+    <div class="background-color">
+    <span class="material-icons">format_color_fill</span>
+    <input type="color" id="bg-color">
+    </div>
+</div>
+<div class="cell-name">
+   <div id="current-cell"></div>
+   <div class="fx">fx</div>
+   <div class="empty"></div>
+</div>
+<table class="my-table">
+        <thead>
+            <tr id="table-heading-row">
+                <th id="main"></th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+ </table>
+        
+<script src="script.js"></script>
+</body>
+</html>
